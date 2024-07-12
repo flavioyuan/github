@@ -1,0 +1,11 @@
+git config --global user.name "flavioyuan"
+git config --global user.email "fyuangouvea@gmail.com"
+
+git config --global --list
+git config --list
+
+## Simulando o uso
+
+### Criando alguns arquivos na pasta local
+
+touch index.html style.css scripts.js
