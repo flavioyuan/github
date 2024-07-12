@@ -1,3 +1,5 @@
+## Configurando
+
 git config --global user.name "flavioyuan"
 git config --global user.email "fyuangouvea@gmail.com"
 
@@ -9,3 +11,13 @@ git config --list
 ### Criando alguns arquivos na pasta local
 
 touch index.html style.css scripts.js
+
+### Incializando
+
+git init  ==> Cria uma pasta .git no diretório local
+
+git init --bare  ==> Cria pasta na raiz
+
+### Clonando um repositório
+
+git clone 
