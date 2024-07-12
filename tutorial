@@ -20,4 +20,120 @@ git init --bare  ==> Cria pasta na raiz
 
 ### Clonando um repositório
 
-git clone 
+git clone https://github.com/flavioyuan/whitenoise.git
+
+ou 
+
+https://github.com/flavioyuan/whitenoise.git white    ==> Clona e cria a pasta
+
+### Versionando no repositório
+
+Working Directory
+
+        Stage
+
+          Commit
+
+        Git Repository
+
+### Colocando arquivo no Stage
+
+git add index.html                          ==> Coloca index.html no Stage
+
+git add .                                   ==> Todos os arquivos
+git add -A                                  ==> Todos os arquivos que ainda não estão no Stage
+
+### Verificando onde os arquivos estão
+
+git status                                   ==> Mostra os arquivos onde estão no fluuxo
+
+### Retirando arquivo do Stage
+
+git reset index.html
+
+### Restaurar um arquivo do Stage para a pasta de trabalho
+
+git restore index.html
+
+### Verificando diferencas entre a versao no Stage e no diretório de trabalho
+
+git diff index.html                             ==> Mostra alteracoes entre a versao n Stage e a do Workung Directory
+git diff                                        ==> Mostra todas as alteracoes
+
+### Criar um snapshot - Commit
+
+git commit -m "Mensagem"                        ==> Copia para o repositorio
+
+### Fazer o stage e o commit de uma so vez
+
+git commit -a -m "Mensagem"                      ==> atencao: outros arquivos modificados serao incluidos no commit
+
+### Alterando o ultimo commit
+git add .
+git commit --amend -m "Mensagem"                ==> Ajusta ultimo commit
+
+### Diferenca entre o ultimo commit e a versao no Stage
+
+git diff stage
+
+### Boas praticas na mensagem
+
+No inicio da mensagem usar
+  add
+  fix
+  update
+
+### Verificando a ordem dos commits
+
+git log
+
+git log -3                                        ===> Ultimo tres commits
+
+git log --oneline                                  ===> Omite linhas
+git log --oneline --graph                          ===> Organizacao das branchs
+git log --author="username"                        ===> Lista commits de determinado autor
+git log --before="YYYY-MM-DD"
+git log -- data/                                    ===> Lista commits da pasta data
+
+git shortlog                                        ===> short log
+git shortlog -sn                                    ===> short log por autor
+
+git reflog
+
+## Branchs
+
+Copia paralela independente de um branch
+
+git branch                                          ===> mostra a branch em uso
+
+git branch nome
+ou
+git checkout -b nome                                  ===> Cria e vai para a branch
+
+git branch -D nome                                     ===> Deleta a branch nome
+
+git branch -m nome_novo                                ===> altera o nome da branch em uso
+
+git log nome                                            ===> historico da branch nome
+
+git diff nome_branch1 nome_branch2                      ===> Mostra a diferenca entre as branchs
+
+
+
+git remote add origin <endereco repositorio remoto>
+
+git remote -v
+
+git push -u origin main                                  ===> envia para o remoto
+
+git pull origin main                                      ===> traz do remoto
+
+
+
+
+
+
+
+
+
+
